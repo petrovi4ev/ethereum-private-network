@@ -3,11 +3,12 @@ geth \
   --datadir .datadir \
   --networkid 1000 \
   --rpc \
-  --rpcapi "admin,debug,eth,miner,net,personal,shh,txpool,web3" \
+  --rpcapi "admin,debug,eth,miner,net,personal,txpool,web3" \
   --ipcpath .datadir/geth.ipc \
   --nodiscover \
+  --allow-insecure-unlock \
   --mine \
-  --minerthreads 1 \
+  --miner.threads 1 \
   --verbosity 3 \
   --rpccorsdomain "*" \
-  --etherbase 0x5DFE021F45f00Ae83B0aA963bE44A1310a782fCC
+  --miner.etherbase 0x5DFE021F45f00Ae83B0aA963bE44A1310a782fCC
